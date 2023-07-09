@@ -1,5 +1,4 @@
-# Strauss Data Science Home Assignment
-![](https://www.meyda.org.il/wp-content/uploads/2022/05/logo-strauss-250x192.jpg)
+# Data Science Home Assignment
 ## _Mor Hananovitz_
 ## _July 2023_
 

@@ -29,11 +29,29 @@ To use SARIMAX model the data must be stationary, therefor need to use **Augment
 
 The model was trained on the entire data until Feb-2023, validated on the last 3 months of the data - March-2023 - May-2023 and predicted the last 6 months of 2023.
 
+### Results - Question 1.5
+
 The optimal RMSE was not low ( **RMSE:** 475.279) - the minimun value was obtained using:
 ```
 order=(1,1,1), seasonal_order=(1, 1, 1, 12), trend='t', trend_order=2
 ```
-### Sales Predictions
+
+The model itself is not quite accurate, both the rmse and the predicted results show that (one result had a negative value).
+
+The most significant parametes were the addition of the trend - I used "t" as a polinom from the second order, as the trend component in the seasonal decompose for category e can suggest (looks like it's linearly increasing then linearly decreasing which can be assumes as a polimone):
+y(t) =a+bt+bt^2
+
+Another significat feature was the order and the seasonal order. I tried multiple combinations to decrease the RMSE but could not find a better configurtion then mentioned above.
+
+**How can we improve the model?**
+1. Optimize the order and seasonal order parameters.
+2. The model itself should be be retrained more often (every quarter) - the model used was only trained once and predicted 6 months.
+3. Infarance - insert the predicted value into the data set and take into considuration for next month prediction.
+4. Validation - should validate the model every month and compare to the prediction and make the needed adjustments.
+5. Add more exhougenouse variables like credit card usage (i.e market indicator) - this can be used to determine market trends over all - when there is a sense of prosperity - people buy more. This can be factored with a an addition of lag time - say 1 month after an official decleration
+6. Additional Models options that can be considured - LSTM, VAR.
+
+#### Sales Predictions
 
 Here are the final model predictions for Product E
 

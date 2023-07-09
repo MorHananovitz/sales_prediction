@@ -1,6 +1,4 @@
 # Sales Prediction
-## _Mor Hananovitz_
-## _July 2023_
 
 The goal it to create a sales prediction model for 5 different products.
 Raw data contains:

@@ -1,4 +1,4 @@
-# Data Science Home Assignment
+# Sales Prediction
 ## _Mor Hananovitz_
 ## _July 2023_
 

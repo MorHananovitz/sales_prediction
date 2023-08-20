@@ -2,7 +2,7 @@
 
 The goal it to create a sales prediction model for 5 different products.
 Raw data contains:
-* Strauss sales per product for the years Jan-2020 to May-2023
+* A company sales per product for the years Jan-2020 to May-2023
 * Promotion data for 2020-2023
 * Hoiliday calander for 2020-2023
 * Competitor sales data - agregated for all products in Jan-2020 to May-2023
